@@ -26,12 +26,19 @@ Same BLE service family as [tiny_print_library](https://github.com/ramo828/tiny_
 
 ## Examples
 
-* [PrintBitmap](examples/PrintBitmap/PrintBitmap.ino)
-  is the simplest example as this printer can only print graphics.
-* [PrintText](examples/PrintText/PrintText.ino)
-  require some fonts and preferrable with UTF-8.
-  Here [U8g2](https://github.com/olikraus/u8g2/) is used to draw
-  the text in a buffer (canvas) and then print it.
+### [PrintBitmap](examples/PrintBitmap/PrintBitmap.ino)
+
+This is the simplest example as this printer can only print graphics.
+
+![Bitmap](img/bitmap.png)
+
+### [PrintText](examples/PrintText/PrintText.ino)
+
+Require some fonts and preferrable with UTF-8.
+Here [U8g2](https://github.com/olikraus/u8g2/) is used to draw
+the text in a buffer (canvas) and then print it.
+
+![TextBitmap](img/textbitmap.png)
 
 ## API
 
