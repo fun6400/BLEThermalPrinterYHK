@@ -1,0 +1,24 @@
+#######################################
+# Syntax Coloring Map For BLEThermalPrinterYHK
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+BLEThermalPrinterYHK	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin	KEYWORD2
+end	KEYWORD2
+isConnected	KEYWORD2
+printCanvas	KEYWORD2
+printBitmap	KEYWORD2
+feed	KEYWORD2
+queryStatus	KEYWORD2
+querySerialNumber	KEYWORD2
+queryProductName	KEYWORD2
+getAddress	KEYWORD2
