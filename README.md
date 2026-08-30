@@ -21,16 +21,27 @@ Same BLE service family as [tiny_print_library](https://github.com/ramo828/tiny_
 4. Install the **NimBLE-Arduino** library via Library Manager (this is
    the only hard dependency). Install **U8g2** too if you want to use
    `printCanvas()`.
-5. Open `File -> Examples -> BLEThermalPrinterYHK -> PrintCanvas` (or
+5. Open `File -> Examples -> BLEThermalPrinterYHK -> PrintText` (or
    `PrintBitmap`) to try it.
 
 ## Examples
+
+The YHK-family printers can only print graphics. 
+To print text a raster library has to be included.
+
+The library search for a printer which has a known UUID
+and when the first one is found it uses that.
+If you have two or more printers you either have to
+turn them off or specificly address the MAC address
+of the device you want to print at.
 
 ### [PrintBitmap](examples/PrintBitmap/PrintBitmap.ino)
 
 This is the simplest example as this printer can only print graphics.
 
 ![Bitmap](img/bitmap.png)
+
+The above image will be printed in the example.
 
 ### [PrintText](examples/PrintText/PrintText.ino)
 
@@ -39,6 +50,15 @@ Here [U8g2](https://github.com/olikraus/u8g2/) is used to draw
 the text in a buffer (canvas) and then print it.
 
 ![TextBitmap](img/textbitmap.png)
+
+In the image above you see a demonstration of UTF-8 is
+enabled with the copyright © sign, and spanish exclamation point ¡.
+
+»YHK-MBP-32« is the Bluetooth name of the printer device. The name
+is retrieved from the printer. The MAC address »25:00:35:00:9b:e9«
+is found while searching for a printer with known UUID's.
+The status shows the volt on the battery
+»HV=H1.0,SV=V1.01,VOLT=7720mv,DPI=384,«.
 
 ## API
 
